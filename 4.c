@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main () {
-    int n,i,j,b=1,k,max,min ;
+    int n,i,j,b=1,k,max,min,x=0,y=0 ;
     scanf("%d",&n) ;
     int a[n] ;
     for(i=0;i<n;i++)
@@ -22,13 +22,14 @@ int main () {
     for(i=1;i<n;i++){
         if(min<a[i]&&a[i]!=0){
             min = a[i] ;
+            x = i ;
         }
         if(max>a[i]&&a[i]!=0){
             max = a[i] ;
+            y = i ;
         }
-
     }
-    printf("%d",max+1) ;
-    printf("%d",min+1) ;
+    printf("%d %d",x+1,y+1) ;
+
     return 0 ;
 }
