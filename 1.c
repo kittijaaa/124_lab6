@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,m,k;
+    int n=1,i,j,m,k;
     scanf("%d",&n);
     char x[n][1000];
     int y[n],mi[n];
